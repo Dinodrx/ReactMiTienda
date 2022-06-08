@@ -1,10 +1,17 @@
 import NavBar from './NavBar';
+import ItemListContainer from './ItemListContainer';
 
 const App = () => {
     return (
-        <NavBar/>
-    
-    ) 
+        <>
+        <NavBar />
+
+        <section>
+            <ItemListContainer greeting ="Bienvenido!"/>
+        </section>
+        
+        </>
+    )   
 }
 
 export default App 
