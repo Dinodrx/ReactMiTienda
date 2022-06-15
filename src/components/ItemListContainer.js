@@ -1,4 +1,5 @@
 import ItemCounts from './ItemCounts';
+import ItemLits from './ItemList';
 
 
 
@@ -8,7 +9,8 @@ const ItemListContainer = (prop) => {
         <p>
             {prop.greeting}
         </p>
-        <ItemCounts stock = {5} initial = {1} onAdd ={()=>{}}/>
+        <ItemLits/>
+        {/* <ItemCounts stock = {5} initial = {1} onAdd ={()=>{}}/> */}
     </>
 }
 

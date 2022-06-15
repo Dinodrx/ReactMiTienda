@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 const ItemCounts = (prop) => {
 
+
+
     // const contador = 0
     // const resultado = useState(0)
     // const contador = resultado[0]
