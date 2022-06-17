@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import "./components/Style.css"
 import App from './components/App';
 // function App(){
 //   return "Hola Mundo"

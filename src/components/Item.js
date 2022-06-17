@@ -1,23 +1,25 @@
-const Item = (prop) => {
+const Item = ({item}) => {
 
-    return <>
-        <div className="card text-center">
-        <div className="card-header">
-        {prop.id}
-        </div>  
-        <div className="card-body">
-       
-            <span className="material-symbols-outlined">
-            laundry
-            </span>
-            <h5 className="card-title">{prop.title}</h5>   
-        </div>
-        <a href="#" className="btn btn-primary">Ver detalle del producto</a>
-        <div className="card-footer">
-        {prop.stock}
-        </div>
-        </div>
-    </>
+    return (
+   
+        // <article classNameName="item">
+        //     <h2>{item.title}</h2>
+        //     <a href="#1">
+        //         <img src = {item.image}></img>
+        //     </a>
+        // </article>
+        <article>
+            <div className="card">
+            <p className="card-header">{item.title}</p>
+            <a href="#1">
+                <img src={item.image} className="card-img-top " alt="..."></img>
+            </a>
+            <div className="card-body">
+            
+            </div>
+            </div>
+        </article>
+    )   
 }
 
 

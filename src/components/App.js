@@ -1,7 +1,6 @@
 import NavBar from './NavBar';
 import ItemListContainer from './ItemListContainer';
-
-
+import ItemDetailContainer from './ItemDetailContainer';
 
 const App = () => {
 
@@ -12,6 +11,7 @@ const App = () => {
         <NavBar />
         <section>
             <ItemListContainer greeting = "Bienvenido!"/>
+            <ItemDetailContainer/>
         </section>
         
         </>

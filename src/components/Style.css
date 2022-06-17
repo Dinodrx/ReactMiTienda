@@ -1,0 +1,16 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 250px;
+    margin: 1rem;
+}
+.item img {
+    width: 100%;
+}
+
+.card {
+    width: 18rem
+}
