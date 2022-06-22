@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 const Item = ({item}) => {
 
     return (
@@ -11,9 +13,9 @@ const Item = ({item}) => {
         <article>
             <div className="card">
             <p className="card-header">{item.title}</p>
-            <a href="#1">
-                <img src={item.image} className="card-img-top " alt="..."></img>
-            </a>
+
+            <Link to = "./item/1"><img src={item.image} className="card-img-top " alt="..."></img></Link>
+
             <div className="card-body">
             
             </div>

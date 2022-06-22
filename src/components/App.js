@@ -1,20 +1,16 @@
 import NavBar from './NavBar';
-import ItemListContainer from './ItemListContainer';
-import ItemDetailContainer from './ItemDetailContainer';
+import Main from './Main';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
 
 
 
     return (
-        <>
-        <NavBar />
-        <section>
-            <ItemListContainer greeting = "Bienvenido!"/>
-            <ItemDetailContainer/>
-        </section>
-        
-        </>
+          <BrowserRouter>
+            <NavBar />
+            <Main/>
+          </BrowserRouter>
     )   
 }
 

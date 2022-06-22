@@ -1,14 +1,18 @@
 import CartWidget from './CartWidget';
+import{Link,NavLink} from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({}) => {
 
     return <header>
-        <h1>Mi Tienda</h1>
 
+        
         <nav className="d-flex justify-content-around">
-            <a   href="#">Inicio</a>
-            <a   href="#">Contacto</a>
-            <a   href="#">Nosotros</a>
+            <Link to ="/">
+                <h1>Mi Tienda</h1>
+            </Link>
+            <NavLink to ="./category/jewelery">jewelery</NavLink>
+            <NavLink to ="./category/electronics">electronic</NavLink>
+            <NavLink to ="./category/clothing">clothing</NavLink>
             <CartWidget />
         </nav> 
     </header>

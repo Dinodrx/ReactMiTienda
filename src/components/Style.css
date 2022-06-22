@@ -14,3 +14,12 @@
 .card {
     width: 18rem
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.active {
+    color: blue
+}
