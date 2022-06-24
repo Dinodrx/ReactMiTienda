@@ -13,7 +13,7 @@ const NavBar = ({}) => {
             <NavLink to ="./category/jewelery">jewelery</NavLink>
             <NavLink to ="./category/electronics">electronic</NavLink>
             <NavLink to ="./category/clothing">clothing</NavLink>
-            <CartWidget />
+            <NavLink to ="/carrito"><CartWidget /></NavLink>
         </nav> 
     </header>
 }

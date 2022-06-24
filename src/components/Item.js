@@ -1,7 +1,12 @@
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import ItemCounts from "./ItemCounts";
 
 const Item = ({item}) => {
 
+    const onAdd = (cantidadSeleccionada) =>{
+        console.log("desde Item Detail: " + cantidadSeleccionada)
+        
+    }
     return (
    
         // <article classNameName="item">
@@ -14,8 +19,8 @@ const Item = ({item}) => {
             <div className="card">
             <p className="card-header">{item.title}</p>
 
-            <Link to = "./item/1"><img src={item.image} className="card-img-top " alt="..."></img></Link>
-
+            <Link to = {`./item/${item.id}`}><img src={item.image} className="card-img-top " alt="..."></img></Link>
+            <ItemCounts stock = {5} initial = {1} onAdd ={onAdd}/>
             <div className="card-body">
             
             </div>

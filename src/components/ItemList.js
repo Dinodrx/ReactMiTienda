@@ -1,4 +1,5 @@
-import Item from "./Item"
+import Item from "./Item";
+import ItemCounts from "./ItemCounts";
 
 const ItemLits = ({items}) => {
 
@@ -7,6 +8,7 @@ const ItemLits = ({items}) => {
                 {items.map(item =>(
                     <Item key = {item.id} item = {item}/>
                   ))}
+            <div><ItemCounts stock = {5} initial = {1} onAdd ={()=>{}}/></div>
         </section>
     )
     

@@ -32,16 +32,24 @@ const ItemCounts = (prop) => {
         }
     }
 
-    const agregarCarrito = () => {
-        if(contador != 0){
-        alert("Se agrego al carrito")
-        setContador(prop.initial)
-        }
-        else {
-            alert("No agrego unidades al carrito")
-        }
-    }
+    // const agregarCarrito = () => {
+    //     if(contador != 0){
+    //     alert("Se agrego al carrito")
+    //     setContador(prop.initial)
+    //     }
+    //     else {
+    //         alert("No agrego unidades al carrito")
+    //     }
+    // }
 
+    const confirmarContador =() =>{
+
+    prop.onAdd(contador)
+    
+        
+        // return ()=>{console.log("Soy el return")}
+    }
+    
     return <>
         <p className="d-flex justify-content-center">casaca</p>
         <div className="container">
@@ -52,7 +60,8 @@ const ItemCounts = (prop) => {
             </section>
         </div>
         <div className="d-flex justify-content-center">
-            <button onClick={agregarCarrito} >Agregar al carrito</button>
+            {/* <button onClick={agregarCarrito} >Agregar al carrito</button> */}
+            <button  onClick={confirmarContador()}>confirmarContador</button>
         </div>
             
     </>
